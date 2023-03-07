@@ -6,3 +6,4 @@ deldist.bat
 .env
 
 package-lock.json
+.npmrc

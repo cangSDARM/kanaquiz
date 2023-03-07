@@ -212,10 +212,10 @@ class ChooseCharacters extends Component {
   render() {
     return (
       <div className="choose-characters">
-        <div className="row">
+        <div className="">
           <div className="col-xs-12">
             <div className="panel panel-default">
-              <div className="panel-body welcome">
+              <div className="p-5 welcome">
                 <h4>Welcome to Kana Pro!</h4>
                 <p>
                   Please choose the groups of characters that you'd like to be
@@ -225,7 +225,7 @@ class ChooseCharacters extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="">
           <div className="col-sm-6">
             <div className="panel panel-default">
               <div className="panel-heading">Hiragana · ひらがな</div>
@@ -348,17 +348,17 @@ class ChooseCharacters extends Component {
             Start
           </div>
         </div>
-        <div className="row">
+        <div className="">
           <div className="col-xs-12">
             <div className="panel panel-default">
-              <div className="panel-body">
+              <div className="p-5">
                 <h4>TODO</h4>
-                <ul>
-                  <li>upgrade to react@17.0.3, react-router@6.0</li>
+                <ul className="list-disc list-inside mb-1">
                   <li>
-                    replace <code>bootstrap</code> to <code>tailwind</code>,{" "}
-                    <code>webpack</code> to <code>vite</code>
+                    {`[WIP] `}
+                    replace <code>bootstrap</code> to <code>tailwind</code>
                   </li>
+                  <li>upgrade to react@17.0.3, react-router@6.0</li>
                   <li>
                     add voice to each character, and read it when typing right
                   </li>

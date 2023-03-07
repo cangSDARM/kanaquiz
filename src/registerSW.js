@@ -1,9 +1,7 @@
 import { Workbox } from "workbox-window";
-import React from "react";
-import ReactDOM from "react-dom";
-import Bootstrap from "./assets/stylesheets/bootstrap.min.css";
-import App from "./components/App/App";
 
+//TODO:
+//https://vite-pwa-org.netlify.app/guide/register-service-worker.html
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     const wb = new Workbox("/sw.js");
@@ -26,10 +24,3 @@ if ("serviceWorker" in navigator) {
     wb.register();
   });
 }
-
-let appEl = document.getElementById("app");
-if (!appEl)
-  // in case of old index.html in cache
-  appEl = document.querySelector(".app");
-
-ReactDOM.render(<App />, appEl);

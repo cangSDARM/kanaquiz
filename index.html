@@ -13,14 +13,21 @@
         border-radius: 5px;
         width: 100%;
       }
-      .app-update.show { display: block; }
-      .avoidwrap { display: inline-block; }
+      .app-update.show {
+        display: block;
+      }
+      .avoidwrap {
+        display: inline-block;
+      }
     </style>
     <title>Kana Pro: Learn hiragana & katakana fast and easy</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Application for studying hiragana & katakana characters.">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="Application for studying hiragana & katakana characters."
+    />
   </head>
   <body>
     <div id="app"></div>
@@ -30,10 +37,6 @@
       <span class="avoidwrap">Click here to update.</span>
     </button>
 
-    <script
-      defer
-      async
-      src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"
-    ></script>
+    <script defer async type="module" src="./src/index.jsx"></script>
   </body>
 </html>
